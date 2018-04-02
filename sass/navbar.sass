@@ -5,21 +5,33 @@ nav
   font-size: 20px
   font-weight: 600
   width: 100%
-  -webkit-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.25)
-  -moz-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.25)
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.25)
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25)
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25)
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25)
   position: fixed
+  ul 
+    list-style: none
+    padding: 0px
   
   z-index: 99999
   background-color: $white
   .nav_brand
-    p
+    a
       text-decoration: overline
       color: $turkis_light
-      padding: 3px 10px
+      width: 100%
+      margin: 0px auto
+      padding: 5px 10px
       font-size: 20px
       border: 1px solid $turkis_light
       box-shadow: 4px 4px 4px 0px rgba(180, 240, 240, 0.9)
+      &:hover
+        color: $turkis_dark
+
+.nav_brand
+  a
+    display: block
+    width: 100%
 
 .nav_items
   a
@@ -42,11 +54,11 @@ nav
     .nav_items 
       float: right
       font-size: 30px
-      margin-top: 10px
+      margin-top: 15px
   
     .nav_brand 
       font-size: 40px
       float: left
       margin-left: 20px
       position: absolute
-      top: -10px
+      top: 5px
