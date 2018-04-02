@@ -1,31 +1,36 @@
-/***** Variables **** */
-/***** Navbar **** */
+/***** Variables *****/
+/***** Navbar *****/
+/***** Variables *****/
 nav {
   font-size: 20px;
   font-weight: 600;
   width: 100%;
   -webkit-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.25);
   position: fixed;
   z-index: 99999;
   background-color: #f8f8f8; }
   nav .nav_brand p {
     text-decoration: overline;
-    color: #00FFB7;
+    color: #00ffb7;
     padding: 3px 10px;
     font-size: 20px;
-    border: 1px solid #00FFB7;
-    box-shadow: 4px 4px 4px 0px rgba(180, 240, 240, 0.9); }
+    border: 1px solid #00ffb7;
+    -webkit-box-shadow: 4px 4px 4px 0px rgba(180, 240, 240, 0.9);
+            box-shadow: 4px 4px 4px 0px rgba(180, 240, 240, 0.9); }
 
 .nav_items a {
   display: block;
-  color: #00FFB7;
+  color: #00ffb7;
   text-decoration: none;
+  -webkit-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
   transition: all 0.1s ease; }
   .nav_items a:hover {
-    transform: scale(1.2);
-    color: #00C8FF; }
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    color: #00c8ff; }
 
 @media screen and (min-width: 768px) {
   nav {
@@ -44,24 +49,26 @@ nav {
       margin-left: 20px;
       position: absolute;
       top: -10px; } }
-/***** Base **** */
+
+/***** Variables *****/
+/***** Base *****/
 * {
   text-align: center;
   margin: 0 auto;
   padding: 0; }
 
-/***** Fonts **** */
+/***** Fonts *****/
 .poiret-one {
   font-family: "Poiret One", cursive; }
 
-/***** Borders **** */
+/***** Borders *****/
 h1:last-child {
   border-top: 3px solid #f8f8f8;
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 3px solid #f8f8f8; }
 
-/***** Body **** */
+/***** Body *****/
 .bg-main {
   background-color: #c8ffff; }
 
@@ -69,7 +76,8 @@ h1:last-child {
   font-size: 22px;
   text-align: center; }
 
-/***** Header **** */
+/***** Variables *****/
+/***** Header *****/
 .header-section {
   display: block;
   position: relative;
@@ -83,11 +91,10 @@ h1:last-child {
   padding-top: 225px;
   color: white;
   font-weight: 800;
+  -webkit-transition: 2s ease;
+  -o-transition: 2s ease;
   transition: 2s ease;
   -webkit-animation: fade_in 3s;
-  -moz-animation: fade_in 3s;
-  -ms-animation: fade_in 3s;
-  -o-animation: fade_in 3s;
   animation: fade_in 3s; }
 
 .header-img-bg {
@@ -97,12 +104,14 @@ h1:last-child {
   background-attachment: fixed;
   opacity: 0.8; }
 
-/***** Box Section **** */
+/***** Box Section *****/
+/***** Variables *****/
 section .title {
   font-size: 2.75rem;
   font-weight: 600;
   margin-bottom: 30px;
   text-align: center; }
+
 section .boxtitle {
   font-size: 1.75rem;
   font-weight: 275;
@@ -111,7 +120,7 @@ section .boxtitle {
   text-align: center;
   border-bottom: 2px solid black; }
 
-/***** Box **** */
+/***** Box *****/
 .flex-box {
   position: relative;
   text-align: center;
@@ -122,10 +131,10 @@ section .boxtitle {
   background-color: #b4f0f0; }
   .flex-box:hover {
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25); }
 
-/***** Resources **** */
+/***** Resources *****/
+/***** Variables *****/
 .resources_text {
   margin-bottom: 25px; }
 
@@ -134,11 +143,18 @@ section .boxtitle {
   margin: 0 5px;
   padding: 20px; }
 
-/***** Footer Section ***** */
+/***** Footer Section ******/
+/***** Variables *****/
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 280px;
   background-image: url("http://www.bravotv.com/sites/nbcubravotv/files/field_blog_image/2016/11/jet-set-iceland-promote.jpg");
   background-position: center;
@@ -151,24 +167,28 @@ footer {
   font-weight: 700;
   font-size: 30px;
   margin-top: 100px;
-  background-color: #5278FF;
+  background-color: #5278ff;
   opacity: 0.8;
   padding: 0px 20px; }
 
-/***** Social Section **** */
+/***** Social Section *****/
+/***** Variables *****/
 .social_section {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-bottom: 100px; }
 
 .links a {
   text-decoration: none;
   font-size: 80px;
   padding: 0px 20px;
-  color: #00FFB7; }
+  color: #00ffb7; }
   .links a:hover {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    color: #00C8FF; }
-
-/*# sourceMappingURL=main.css.map */
+    color: #00c8ff; }
