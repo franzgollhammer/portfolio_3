@@ -5,9 +5,9 @@ nav
   font-size: 20px
   font-weight: 600
   width: 100%
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25)
-  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25)
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25)
+  -webkit-box-shadow: 0 2px 2px 0 $box_shadow
+  -moz-box-shadow: 0 2px 2px 0 $box_shadow
+  box-shadow: 0 2px 2px 0 $box_shadow
   position: fixed
   ul 
     list-style: none
@@ -18,12 +18,12 @@ nav
   .nav_brand
     a
       text-decoration: overline
-      color: $turkis_light
+      color: $turkis
       width: 100%
       margin: 0px auto
       padding: 5px 10px
       font-size: 20px
-      border: 1px solid $turkis_light
+      border: 1px solid $turkis
       box-shadow: 4px 4px 4px 0px rgba(180, 240, 240, 0.9)
       &:hover
         color: $turkis_dark
@@ -36,7 +36,7 @@ nav
 .nav_items
   a
     display: block
-    color: $turkis_light
+    color: $turkis
     text-decoration: none
     transition: all 0.1s ease
     &:hover
